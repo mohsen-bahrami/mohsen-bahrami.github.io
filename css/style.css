@@ -14,7 +14,7 @@ body {
 }
 
 .sidebar {
-    width: 25%;
+    width: 20%;
     background-color: #222;
     padding: 20px;
     height: 100vh;
@@ -29,8 +29,8 @@ body {
 }
 
 .profile-picture {
-    max-width: 50%;
-    border-radius: 50%;
+    max-width: 40%;
+    border-radius: 40%;
 }
 
 .profile h2 {
@@ -39,7 +39,7 @@ body {
 }
 
 .profile p {
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .main-content {
