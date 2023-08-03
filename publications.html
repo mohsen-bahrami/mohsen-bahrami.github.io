@@ -43,35 +43,29 @@
                         <p><a href="https://www.nature.com/articles/s41598-023-36624-0">Scientific Reports 13, 10073 (2023)</a></p>
                     </div>
                     <div class="publication-abstract">
-                        <p id="abstractText1" style="display: none;">
-                            Small and Medium-sized Enterprises play a significant role in most economies by contributing to job creation and economic growth. A majority of such merchants rely on business financing, and thus, financial institutions and investors need to assess their performance before making decisions on business loans. However, current methods of predicting merchants’ future performance involve their private internal information, such as revenue and customer base, which cannot be shared without potentially exposing critical information. To address this problem, we first propose a novel approach to predicting merchants’ future performance using credit card transaction data. Specifically, we construct a merchant network, regarding customers as bridges between merchants, and extract features from the constructed network structure for prediction purposes. Our study results demonstrate that the performance of machine learning models with features extracted from our proposed network is comparable to those with conventional revenue- and customer-based features, while maintaining higher privacy levels when shared with third-party organizations. Our approach offers a practical solution to privacy concerns over data and information required for merchants’ performance prediction, enabling safe data-sharing among financial institutions and investors, helping them make more informed decisions on allocating their financial resources while ensuring that merchants’ sensitive information is kept confidential.
-                        </p>
-                        <button id="toggleAbstractButton1" class="abstract-button">Read Abstract</button>
-                     </div>
+                        <p id="abstractText" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <button id="toggleAbstractButton" class="abstract-button">Read Abstract</button>
+                    </div>
                 </div>
-                 
                 <!-- Add more publication divs as needed -->
             </section>
         </div>
     </div>
 <script>
-    console.log("Script loaded!");
-    const abstractText1 = document.getElementById("abstractText1");
-    const toggleAbstractButton1 = document.getElementById("toggleAbstractButton1");
-    let abstractVisible1 = false;
+    const abstractText = document.getElementById("abstractText");
+    const toggleAbstractButton = document.getElementById("toggleAbstractButton");
+    let abstractVisible = false;
 
-    toggleAbstractButton1.addEventListener("click", function() {
-        if (abstractVisible1) {
-            abstractText1.style.display = "none";
-            toggleAbstractButton1.textContent = "Read Abstract";
+    toggleAbstractButton.addEventListener("click", function() {
+        if (abstractVisible) {
+            abstractText.style.display = "none";
+            toggleAbstractButton.textContent = "Read Abstract";
         } else {
-            abstractText1.style.display = "block";
-            toggleAbstractButton1.textContent = "Close Abstract";
+            abstractText.style.display = "block";
+            toggleAbstractButton.textContent = "Close Abstract";
         }
-        abstractVisible1 = !abstractVisible1;
+        abstractVisible = !abstractVisible;
     });
-
-    // Add similar script blocks for other publications if needed
 </script>
 </body>
 </html>
