@@ -17,7 +17,7 @@ body {
     width: 20%;
     background-color: #222;
     padding: 40px;
-    padding-top: 100px;
+    padding-top: 80px;
     height: 100vh;
     overflow: auto;
 }
@@ -30,17 +30,17 @@ body {
 }
 
 .profile-picture {
-    max-width: 36%;
-    border-radius: 36%;
+    max-width: 40%;
+    border-radius: 40%;
 }
 
 .profile h2 {
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 1.5rem;
 }
 
 .profile p {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .main-content {
