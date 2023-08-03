@@ -79,6 +79,27 @@ header {
     text-decoration: underline; /* Underline effect */
 }
 
+/* Styles for publications */
+.publication {
+    margin-bottom: 30px;
+    border: 1px solid #333;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 5px;
+}
+
+.publication-title {
+    margin-bottom: 10px;
+}
+
+.publication-title h3 {
+    font-size: 1.2rem;
+}
+
+.publication-authors {
+    margin-bottom: 10px;
+}
+
 /* Responsive layout */
 @media screen and (max-width: 768px) {
     .container {
@@ -93,3 +114,4 @@ header {
         max-width: 100%;
     }
 }
+
