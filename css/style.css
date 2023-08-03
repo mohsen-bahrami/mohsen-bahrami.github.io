@@ -3,18 +3,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
+    background-color: #000;
+    color: #fff;
+    display: flex; /* Added to create a flex container */
 }
 
 .container {
     display: flex;
+    flex: 1; /* Added to make container take remaining space */
 }
 
 .sidebar {
     width: 25%;
-    background-color: #222; /* Dark gray background */
+    background-color: #222;
     padding: 20px;
+    height: 100vh; /* Set sidebar height to full viewport height */
+    overflow: auto; /* Add scroll if content exceeds sidebar height */
 }
 
 .sidebar img {
@@ -28,7 +32,7 @@ body {
 }
 
 header {
-    background-color: #111; /* Darker gray background */
+    background-color: #111;
     padding: 10px 0;
 }
 
