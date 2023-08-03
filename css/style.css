@@ -5,20 +5,20 @@ body {
     padding: 0;
     background-color: #000;
     color: #fff;
-    display: flex; /* Added to create a flex container */
+    display: flex;
 }
 
 .container {
     display: flex;
-    flex: 1; /* Added to make container take remaining space */
+    flex: 1;
 }
 
 .sidebar {
     width: 25%;
     background-color: #222;
     padding: 20px;
-    height: 100vh; /* Set sidebar height to full viewport height */
-    overflow: auto; /* Add scroll if content exceeds sidebar height */
+    height: 100vh;
+    overflow: auto;
 }
 
 .sidebar img {
@@ -36,19 +36,24 @@ header {
     padding: 10px 0;
 }
 
-nav ul {
+.nav-buttons {
     list-style: none;
     padding: 0;
     display: flex;
 }
 
-nav li {
-    margin-right: 20px;
+.nav-button {
+    border: none;
+    background-color: #333; /* Button color */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
+.nav-button:hover {
+    background-color: #555; /* Button color on hover */
 }
 
 /* Responsive layout */
