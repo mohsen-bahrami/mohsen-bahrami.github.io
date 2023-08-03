@@ -249,6 +249,21 @@
         </div>
     </div>
 <script>
+    const abstractText1 = document.getElementById("abstractText1");
+    const toggleAbstractButton1 = document.getElementById("toggleAbstractButton1");
+    let abstractVisible1 = false;
+
+    toggleAbstractButton1.addEventListener("click", function() {
+        if (abstractVisible1) {
+            abstractText1.style.display = "none";
+            toggleAbstractButton1.textContent = "Read Abstract";
+        } else {
+            abstractText1.style.display = "block";
+            toggleAbstractButton1.textContent = "Close Abstract";
+        }
+        abstractVisible1 = !abstractVisible1;
+    });
+
     const abstractText = document.getElementById("abstractText");
     const toggleAbstractButton = document.getElementById("toggleAbstractButton");
     let abstractVisible = false;
