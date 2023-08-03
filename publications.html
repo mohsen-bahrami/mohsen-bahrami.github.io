@@ -263,21 +263,6 @@
         }
         abstractVisible1 = !abstractVisible1;
     });
-
-    const abstractText = document.getElementById("abstractText");
-    const toggleAbstractButton = document.getElementById("toggleAbstractButton");
-    let abstractVisible = false;
-
-    toggleAbstractButton.addEventListener("click", function() {
-        if (abstractVisible) {
-            abstractText.style.display = "none";
-            toggleAbstractButton.textContent = "Read Abstract";
-        } else {
-            abstractText.style.display = "block";
-            toggleAbstractButton.textContent = "Close Abstract";
-        }
-        abstractVisible = !abstractVisible;
-    });
 </script>
 </body>
 </html>
