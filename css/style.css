@@ -73,31 +73,34 @@ header {
     background-color: #555;
 }
 
-/* Change hyperlink color and underline */
-.publication-details a {
-    color: #00aaff; /* Light blue color */
-    text-decoration: underline; /* Underline effect */
-}
-
 /* Styles for publications */
 .publication {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border: 1px solid #333;
     padding: 20px;
     background-color: #111;
     border-radius: 5px;
 }
 
-.publication-title {
-    margin-bottom: 10px;
-}
-
 .publication-title h3 {
+     margin: 0;
     font-size: 1.2rem;
+    margin-bottom: 5px;
 }
-
 .publication-authors {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+.publication-details {
+    margin-bottom: 5px; /* Decrease vertical distance between details and abstract */
+}
+/* Change hyperlink color and underline */
+.publication-details a {
+    color: #00aaff; /* Light blue color */
+    text-decoration: underline; /* Underline effect */
+}
+.publication-abstract {
+    margin-top: 5px; /* Decrease vertical distance between abstract and next publication */
+    display: none;
 }
 
 /* Responsive layout */
