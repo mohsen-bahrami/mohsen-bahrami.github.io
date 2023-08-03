@@ -87,27 +87,3 @@ header {
         max-width: 100%;
     }
 }
-
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:visited {
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
