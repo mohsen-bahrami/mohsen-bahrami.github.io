@@ -73,6 +73,12 @@ header {
     background-color: #555;
 }
 
+/* Change hyperlink color and underline */
+.publication-details a {
+    color: #00aaff; /* Light blue color */
+    text-decoration: underline; /* Underline effect */
+}
+
 /* Responsive layout */
 @media screen and (max-width: 768px) {
     .container {
