@@ -89,9 +89,11 @@ header {
 }
 .publication-authors {
     margin-bottom: 5px;
+    font-size: 90%; 
 }
 .publication-details {
     margin-bottom: 5px; /* Decrease vertical distance between details and abstract */
+    font-size: 90%; 
 }
 /* Change hyperlink color and underline */
 .publication-details a {
