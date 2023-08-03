@@ -16,7 +16,8 @@ body {
 .sidebar {
     width: 20%;
     background-color: #222;
-    padding: 50px;
+    padding: 40px;
+    padding-top: 200px;
     height: 100vh;
     overflow: auto;
 }
