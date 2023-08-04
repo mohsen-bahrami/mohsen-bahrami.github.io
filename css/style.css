@@ -105,7 +105,7 @@ header {
     color: #aaa; /* Light gray color */
     margin-bottom: 5px;
     text-align: justify; /* Justify the text */
-    font-size: 80%; /* Reduce the font size to 80% */
+    font-size: 50%; /* Reduce the font size to 80% */
 }
 
 /* Responsive layout */
