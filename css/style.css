@@ -81,15 +81,16 @@ header {
 
 /* Styles for publications */
 .publication {
-    margin-bottom: 2px;
+    /* margin-bottom: 2px; */
+    margin: 5px;
     border: 1px solid #333;
-    padding: 15px;
+    padding: 5px;
     background-color: #111;
     border-radius: 5px;
 }
 
 .publication-title {
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 
 .publication-title h3 {
@@ -97,13 +98,13 @@ header {
 }
 
 .publication-authors {
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 
 .publication-abstract {
     font-style: italic;
     color: #aaa; /* Light gray color */
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     text-align: justify; /* Justify the text */
     font-size: 80%; /* Reduce the font size to 80% */
 }
