@@ -17,7 +17,7 @@ body {
     width: 20%;
     background-color: #222;
     padding: 40px;
-    padding-top: 80px;
+    padding-top: 100px;
     height: 100vh;
     overflow: auto;
 }
@@ -37,10 +37,26 @@ body {
 .profile h2 {
     margin-top: 30px;
     font-size: 1.5rem;
+	line-height: 0.5;
 }
 
 .profile p {
-    margin-top: 10px;
+    margin-top: 1px;
+	line-height: 0.5;
+}
+
+/* Styles for the contact links */
+.contact-links a {
+    display: block;
+    margin-bottom: 5px;
+    color: #428bca; /* Lighter color, you can change the color code to your preference */
+    text-decoration: none;
+    font-size: 20px; /* Adjust the icon size as needed */
+}
+
+.contact-links a:hover {
+    text-decoration: none; /* Remove underline on hover */
+    color: #0077cc; /* Darker color on hover, you can change the color code to your preference */
 }
 
 .main-content {
@@ -73,43 +89,55 @@ header {
     background-color: #555;
 }
 
+
+/* Styles for publications */
+.publication {
+    /* margin-bottom: 20px; */
+    /* margin: 0px; */
+    border: 1px solid #333;
+    padding: 5px;
+    background-color: #111;
+    border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.publication-title {
+    /* margin-bottom: 0px; */
+	line-height: 0;
+}
+
+.publication-title h3 {
+    font-size: 1.1rem;
+    line-height: 0;
+	/* margin-bottom: 0px; */
+}
+
+.publication-authors {
+    /* margin-bottom: 0px; */
+    line-height: 0.5;
+	font-size: 90%; /* Reduce the font size to 90% */
+}
+
+.publication-details {
+    /* margin-bottom: 0px; */
+    line-height: 0.5;
+	font-size: 90%;
+}
+
 /* Change hyperlink color and underline */
 .publication-details a {
     color: #00aaff; /* Light blue color */
     text-decoration: underline; /* Underline effect */
 }
 
-/* Styles for publications */
-.publication {
-    /* margin-bottom: 20px; */
-    margin: 10px;
-    border: 1px solid #333;
-    padding: 5px;
-    background-color: #111;
-    border-radius: 5px;
-}
-
-.publication-title {
-    margin-bottom: 1px;
-}
-
-.publication-title h3 {
-    font-size: 1.0rem;
-    line-height: 1;
-}
-
-.publication-authors {
-    margin-bottom: 1px;
-    line-height: 1;
-}
-
 .publication-abstract {
     font-style: italic;
     color: #aaa; /* Light gray color */
-    margin-bottom: 1px;
+    /* margin-bottom: 0px; */
     text-align: justify; /* Justify the text */
     font-size: 80%; /* Reduce the font size to 80% */
-    line-height: 1;
+    line-height: 1.5;
 }
 
 /* Responsive layout */
