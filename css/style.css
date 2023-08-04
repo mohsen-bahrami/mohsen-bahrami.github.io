@@ -89,7 +89,7 @@ header {
 }
 
 .publication-title {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .publication-title h3 {
@@ -97,6 +97,12 @@ header {
 }
 
 .publication-authors {
+    margin-bottom: 5px;
+}
+
+.publication-abstract {
+    font-style: italic;
+    color: #aaa; /* Light gray color */
     margin-bottom: 10px;
 }
 
