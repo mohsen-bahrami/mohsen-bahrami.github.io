@@ -32,56 +32,57 @@
             </header>
             <section>
                 <h1>Publications</h1>
-                <div class="publication">
-                    <div class="publication-title">
-                        <h3>Predicting merchant future performance using privacy-safe network-based features</h3>
-                    </div>
-                    <div class="publication-authors">
-                        <p>Mohsen Bahrami, Hasan Alp Boz, Yoshihiko Suhara, Selim Balcisoy, Burcin Bozkaya, Alex Pentland</p>
-                    </div>
-                    <div class="publication-details">
-                        <p><a href="https://www.nature.com/articles/s41598-023-36624-0">Scientific Reports 13, 10073 (2023)</a></p>
-                    </div>
-                    <div class="publication-abstract">
-                        <p id="abstractText" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                        <button id="toggleAbstractButton" class="abstract-button">Read Abstract</button>
-                    </div>
-                </div>
-                <div class="publication">
-                    <div class="publication-title">
-                        <h3>Disaggregating sales prediction: A gravitational approach</h3>
-                    </div>
-                    <div class="publication-authors">
-                        <p>Carla Freitas Silveira Netto, Mohsen Bahrami, Vinicius Andrade Brei, Burcin Bozkaya, Selim Balcisoy, Alex Pentland</p>
-                    </div>
-                    <div class="publication-details">
-                        <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417423000660">Expert Systems with Applications 217, 119565 (2023)</a></p>
-                    </div>
-                    <div class="publication-abstract">
-                        <p id="abstractText" style="display: none;">ccccccc Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                        <button id="toggleAbstractButton" class="abstract-button">Read Abstract</button>
-                    </div>
-                </div>
-            </section>
-        </div>
+<div class="publication">
+    <div class="publication-title">
+        <h3>Predicting merchant future performance using privacy-safe network-based features</h3>
     </div>
+    <div class="publication-authors">
+        <p>Mohsen Bahrami, Hasan Alp Boz, Yoshihiko Suhara, Selim Balcisoy, Burcin Bozkaya, Alex Pentland</p>
+    </div>
+    <div class="publication-details">
+        <p><a href="https://www.nature.com/articles/s41598-023-36624-0">Scientific Reports 13, 10073 (2023)</a></p>
+    </div>
+    <div class="publication-abstract">
+        <p id="abstractText1" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <button class="abstract-button" data-target="abstractText1">Read Abstract</button>
+    </div>
+</div>
+<div class="publication">
+    <div class="publication-title">
+        <h3>Disaggregating sales prediction: A gravitational approach</h3>
+    </div>
+    <div class="publication-authors">
+        <p>Carla Freitas Silveira Netto, Mohsen Bahrami, Vinicius Andrade Brei, Burcin Bozkaya, Selim Balcisoy, Alex Pentland</p>
+    </div>
+    <div class="publication-details">
+        <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417423000660">Expert Systems with Applications 217, 119565 (2023)</a></p>
+    </div>
+    <div class="publication-abstract">
+        <p id="abstractText2" style="display: none;">ccccccc Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <button class="abstract-button" data-target="abstractText2">Read Abstract</button>
+    </div>
+</div>
+</section>
+</div>
+</div>
 <script>
-    const abstractText = document.getElementById("abstractText");
-    const toggleAbstractButton = document.getElementById("toggleAbstractButton");
-    let abstractVisible = false;
+    const abstractButtons = document.querySelectorAll(".abstract-button");
+    abstractButtons.forEach(button => {
+        const targetId = button.getAttribute("data-target");
+        const abstractText = document.getElementById(targetId);
+        let abstractVisible = false;
 
-    toggleAbstractButton.addEventListener("click", function() {
-        if (abstractVisible) {
-            abstractText.style.display = "none";
-            toggleAbstractButton.textContent = "Read Abstract";
-        } else {
-            abstractText.style.display = "block";
-            toggleAbstractButton.textContent = "Close Abstract";
-        }
-        abstractVisible = !abstractVisible;
+        button.addEventListener("click", function () {
+            if (abstractVisible) {
+                abstractText.style.display = "none";
+                button.textContent = "Read Abstract";
+            } else {
+                abstractText.style.display = "block";
+                button.textContent = "Close Abstract";
+            }
+            abstractVisible = !abstractVisible;
+        });
     });
-
-    
 </script>
 </body>
 </html>
